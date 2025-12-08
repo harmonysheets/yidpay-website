@@ -4,8 +4,8 @@ import {
   UserPlus, List, CreditCard, Bookmark, PieChart, 
   FileText, User, MessageSquare, ChevronRight
 } from 'lucide-react';
-import SMSMockup from '../components/ui/SMSMockup';
-import SMSSimulator from '../components/simulator/SMSSimulator';
+import SMSMockup from '../Components/ui/SMSMockup';
+import SMSSimulator from '../Components/simulator/SMSSimulator';
 
 const CommandCard = ({ command, description, example, response }) => {
   const [isExpanded, setIsExpanded] = useState(false);

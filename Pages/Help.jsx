@@ -7,7 +7,7 @@ import {
   User, FileText, Building2, HelpCircle, ChevronRight,
   MessageSquare, Phone, Mail
 } from 'lucide-react';
-import { Input } from '@/components/ui/input';
+import { Input } from '../src/components/ui/input';
 
 const CategoryCard = ({ icon: Icon, title, description, articles, onClick }) => (
   <motion.button

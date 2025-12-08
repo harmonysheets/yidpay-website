@@ -6,7 +6,7 @@ import {
   Shield, Users, Database, CreditCard,
   Star, Lightbulb, Heart
 } from 'lucide-react';
-import Logo from '../components/ui/Logo';
+import Logo from '../Components/ui/Logo';
 
 const ValueCard = ({ icon: Icon, title, description }) => (
   <motion.div
