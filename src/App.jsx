@@ -14,7 +14,7 @@ import Terms from '../Pages/Terms'
 
 function App() {
   return (
-    <Router basename="/yidpay-website">
+    <Router>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
