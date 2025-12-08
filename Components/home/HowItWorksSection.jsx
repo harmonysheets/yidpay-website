@@ -28,11 +28,11 @@ export default function HowItWorksSection() {
     {
       icon: CreditCard,
       number: "03",
-      title: "Donate Instantly",
+      title: "Make Payment Instantly",
       description: "Send campaign ID + amount. Use a saved card or enter new card details securely.",
       messages: [
         { type: 'sent', text: 'CN01 180 6547' },
-        { type: 'received', text: '✅ Thank you! $180 donated to Beth Israel Building Fund. Receipt sent to your email.' },
+        { type: 'received', text: '✅ Thank you! $180 payment to Beth Israel Building Fund. Receipt sent to your email.' },
       ]
     }
   ];

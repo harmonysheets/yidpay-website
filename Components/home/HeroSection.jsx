@@ -33,7 +33,7 @@ export default function HeroSection() {
             >
               <span className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-                SMS-Based Donation Platform
+                SMS-Based Payment Platform
               </span>
             </motion.div>
 
@@ -53,7 +53,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              The SMS payment platform built for the Jewish community. Accept tuition, membership dues, and donations via text. Track maaser, manage pledges—no apps required. Optional web dashboard available.
+              The SMS payment platform built for the Jewish community. Accept tuition payments, membership dues, and charitable donations via text. Track maaser, manage pledges—no apps required. Optional web dashboard available.
             </motion.p>
 
             <motion.div

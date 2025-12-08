@@ -35,7 +35,7 @@ export default function FeaturesGrid() {
     {
       icon: Mail,
       title: "Instant Receipts",
-      description: "Email and SMS confirmations for every donation. Perfect for tax season record-keeping."
+      description: "Email and SMS confirmations for every payment and donation. Perfect for tax season record-keeping."
     },
     {
       icon: Clock,

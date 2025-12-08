@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 export default function StatsSection() {
   const stats = [
-    { value: "$250,000+", label: "Donations Processed" },
+    { value: "$250,000+", label: "Payments Processed" },
     { value: "150+", label: "Organizations Served" },
     { value: "5,000+", label: "Active Users" },
     { value: "30s", label: "Response Time" }

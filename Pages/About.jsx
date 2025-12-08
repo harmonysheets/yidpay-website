@@ -163,7 +163,7 @@ export default function About() {
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
                 <div className="text-4xl font-bold text-blue-600 mb-2">$250K+</div>
-                <div className="text-slate-600">Donations Processed</div>
+                <div className="text-slate-600">Payments Processed</div>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
                 <div className="text-4xl font-bold text-blue-600 mb-2">24/6</div>

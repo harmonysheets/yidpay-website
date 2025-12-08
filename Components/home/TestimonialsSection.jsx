@@ -7,7 +7,7 @@ export default function TestimonialsSection() {
 
   const testimonials = [
     {
-      quote: "YidPay has transformed how our shul collects donations. Members love the simplicity—they just text to give. Our fundraising has increased by 40% since we started using it.",
+      quote: "YidPay has transformed how our shul collects payments and donations. Members love the simplicity—they just text to pay membership dues or give tzedakah. Our collections have increased by 40% since we started using it.",
       author: "Rabbi David Goldstein",
       role: "Beth Israel Congregation",
       rating: 5
@@ -25,7 +25,7 @@ export default function TestimonialsSection() {
       rating: 5
     },
     {
-      quote: "The pledge management feature is incredible. Our donors can commit to future donations, and we can track everything automatically. It's simplified our entire operation.",
+      quote: "The pledge management feature is incredible. Parents can commit to future tuition payments, and we can track everything automatically. It's simplified our entire payment operation.",
       author: "Yosef Klein",
       role: "Yeshiva Administrator",
       rating: 5
