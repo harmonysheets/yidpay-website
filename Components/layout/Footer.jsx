@@ -104,7 +104,15 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-sm">
-            © {currentYear} YidPay. All rights reserved.
+            © {currentYear} YidPay. All rights reserved. Developed by{' '}
+            <a 
+              href="https://adaplix.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              Adaplix
+            </a>
           </p>
           <div className="flex items-center gap-6">
             <span className="text-sm text-slate-500">
