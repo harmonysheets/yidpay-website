@@ -171,7 +171,7 @@ export default function Terms() {
                   For questions about these Terms, please contact us:
                 </p>
                 <ul className="list-none text-slate-600 mt-4 space-y-2">
-                  <li>📱 Text: 855-696-2500</li>
+                  <li>📱 Text: 845-385-2400</li>
                   <li>📧 Email: legal@yidpay.com</li>
                 </ul>
               </section>

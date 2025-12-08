@@ -38,9 +38,9 @@ export default function Footer() {
               The SMS payment platform built for the Jewish community. Accept payments, donations, and manage transactions—all via text message.
             </p>
             <div className="space-y-3">
-              <a href="tel:+18556962500" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="tel:+18453852400" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
-                855-696-2500
+                845-385-2400
               </a>
               <a href="mailto:support@yidpay.com" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />

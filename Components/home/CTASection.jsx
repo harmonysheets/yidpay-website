@@ -32,11 +32,11 @@ export default function CTASection() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="sms:+18556962500?body=JOIN"
+              href="sms:+18453852400?body=JOIN"
               className="inline-flex items-center justify-center gap-3 bg-white hover:bg-slate-50 text-blue-900 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5"
             >
               <MessageSquare className="w-5 h-5" />
-              Text JOIN to 855-696-2500
+              Text JOIN to 845-385-2400
             </a>
             <a
               href="/contact"

@@ -63,13 +63,13 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
             >
               <a
-                href="sms:+18556962500?body=JOIN"
+                href="sms:+18453852400?body=JOIN"
                 className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/30 transition-all duration-300 hover:-translate-y-0.5"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
-                Text JOIN to 855-696-2500
+                Text JOIN to 845-385-2400
               </a>
               <a
                 href="#how-it-works"

@@ -62,7 +62,7 @@ export default function Help() {
       description: "How to join, make your first donation, and set up your account",
       articles: 8,
       faqs: [
-        { question: "How do I join YidPay?", answer: "Simply text JOIN to 855-696-2500. You'll be guided through a quick registration process where you'll provide your name and email address for receipts." },
+        { question: "How do I join YidPay?", answer: "Simply text JOIN to 845-385-2400. You'll be guided through a quick registration process where you'll provide your name and email address for receipts." },
         { question: "Is there an app to download?", answer: "No! YidPay works entirely via SMS text messages. No app required—it works on any phone." },
         { question: "How do I see available campaigns?", answer: "Text LIST to see all available campaigns from partner organizations. Each campaign has a unique ID you can use for donations." },
         { question: "Can I use YidPay on a flip phone?", answer: "Yes! YidPay works on any phone that can send and receive text messages, including basic flip phones." }
@@ -146,10 +146,10 @@ export default function Help() {
       description: "Common issues and solutions",
       articles: 8,
       faqs: [
-        { question: "My command isn't working, what do I do?", answer: "Make sure you're texting to 855-696-2500 and using the correct format. Text HELP to see available commands or contact support." },
+        { question: "My command isn't working, what do I do?", answer: "Make sure you're texting to 845-385-2400 and using the correct format. Text HELP to see available commands or contact support." },
         { question: "I'm not receiving messages from YidPay", answer: "Check that you haven't blocked the number and that your phone can receive SMS. Contact your carrier if issues persist." },
         { question: "My account seems locked, how do I unlock it?", answer: "For security reasons, accounts may be locked after multiple failed attempts. Text SUPPORT or email support@yidpay.com for assistance." },
-        { question: "How do I get a human to help me?", answer: "Text SUPPORT followed by your question, call 855-696-2500, or email support@yidpay.com. Support is available 24/6 (Sunday-Thursday 9am-9pm EST, closed Shabbos)." }
+        { question: "How do I get a human to help me?", answer: "Text SUPPORT followed by your question, call 845-385-2400, or email support@yidpay.com. Support is available 24/6 (Sunday-Thursday 9am-9pm EST, closed Shabbos)." }
       ]
     }
   ];
@@ -193,13 +193,13 @@ export default function Help() {
       <section className="py-8 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-8">
-            <a href="sms:+18556962500?body=SUPPORT%20" className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
+            <a href="sms:+18453852400?body=SUPPORT%20" className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
               <MessageSquare className="w-5 h-5" />
               <span>Text Support</span>
             </a>
-            <a href="tel:+18556962500" className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
+            <a href="tel:+18453852400" className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
               <Phone className="w-5 h-5" />
-              <span>855-696-2500</span>
+              <span>845-385-2400</span>
             </a>
             <a href="mailto:support@yidpay.com" className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
               <Mail className="w-5 h-5" />
@@ -267,7 +267,7 @@ export default function Help() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="sms:+18556962500?body=SUPPORT%20"
+              href="sms:+18453852400?body=SUPPORT%20"
               className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold"
             >
               <MessageSquare className="w-5 h-5" />

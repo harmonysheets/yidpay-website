@@ -222,10 +222,10 @@ export default function Features() {
             Join thousands of users and organizations already using YidPay
           </p>
           <a
-            href="sms:+18556962500?body=JOIN"
+            href="sms:+18453852400?body=JOIN"
             className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-blue-900 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl transition-all hover:-translate-y-0.5"
           >
-            Text JOIN to 855-696-2500
+            Text JOIN to 845-385-2400
           </a>
         </div>
       </section>

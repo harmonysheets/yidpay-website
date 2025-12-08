@@ -63,7 +63,7 @@ export default function Header() {
               Contact
             </Link>
             <a
-              href="sms:+18556962500?body=JOIN"
+              href="sms:+18453852400?body=JOIN"
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
             >
               <MessageSquare className="w-4 h-4" />
@@ -109,7 +109,7 @@ export default function Header() {
                 Contact
               </Link>
               <a
-                href="sms:+18556962500?body=JOIN"
+                href="sms:+18453852400?body=JOIN"
                 className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg font-semibold w-full mt-4"
               >
                 <MessageSquare className="w-4 h-4" />

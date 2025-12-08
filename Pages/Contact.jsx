@@ -58,7 +58,7 @@ export default function Contact() {
       icon: MessageSquare,
       title: "Text Support",
       content: "Text SUPPORT + your message for instant help",
-      action: "sms:+18556962500?body=SUPPORT%20",
+      action: "sms:+18453852400?body=SUPPORT%20",
       actionText: "Send Text →"
     },
     {
@@ -71,8 +71,8 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Call Us",
-      content: "855-696-2500",
-      action: "tel:+18556962500",
+      content: "845-385-2400",
+      action: "tel:+18453852400",
       actionText: "Call Now →"
     },
     {
@@ -286,7 +286,7 @@ export default function Contact() {
                 </p>
                 <p className="text-slate-700">
                   <strong>Quickest support:</strong> Text <span className="font-mono bg-white px-2 py-1 rounded">SUPPORT</span> followed 
-                  by your question to 855-696-2500
+                  by your question to 845-385-2400
                 </p>
               </div>
 

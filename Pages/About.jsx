@@ -246,7 +246,7 @@ export default function About() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="sms:+18556962500?body=JOIN"
+              href="sms:+18453852400?body=JOIN"
               className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-blue-900 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl transition-all hover:-translate-y-0.5"
             >
               Text JOIN to Get Started
