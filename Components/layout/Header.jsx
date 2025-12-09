@@ -22,6 +22,7 @@ export default function Header() {
     { name: 'Features', path: '/features' },
     { name: 'How It Works', path: '/how-it-works' },
     { name: 'Organizations', path: '/organizations' },
+    { name: 'Businesses', path: '/businesses' },
     { name: 'Pricing', path: '/pricing' },
     { name: 'About', path: '/about' },
   ];

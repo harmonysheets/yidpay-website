@@ -13,6 +13,7 @@ export default function Footer() {
       { name: 'How It Works', path: '/how-it-works' },
       { name: 'Pricing', path: '/pricing' },
       { name: 'Organizations', path: '/organizations' },
+      { name: 'Businesses', path: '/businesses' },
     ],
     company: [
       { name: 'About', path: '/about' },

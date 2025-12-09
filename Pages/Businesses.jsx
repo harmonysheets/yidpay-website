@@ -1,11 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '../utils';
 import { 
-  Building2, Phone, Users, Send, FileSpreadsheet, 
-  Palette, Target, CreditCard, CheckCircle, ArrowRight,
-  Star, Zap, Clock
+  Store, Phone, Users, Send, FileSpreadsheet, 
+  Palette, TrendingUp, CreditCard, CheckCircle, ArrowRight,
+  Star, Zap, Clock, ShoppingBag, Receipt, DollarSign
 } from 'lucide-react';
 
 const BenefitCard = ({ icon: Icon, title, description }) => (
@@ -15,8 +14,8 @@ const BenefitCard = ({ icon: Icon, title, description }) => (
     viewport={{ once: true }}
     className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-all"
   >
-    <div className="w-12 h-12 bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl flex items-center justify-center mb-4">
-      <Icon className="w-6 h-6 text-amber-600" />
+    <div className="w-12 h-12 bg-gradient-to-br from-teal-50 to-blue-50 rounded-xl flex items-center justify-center mb-4">
+      <Icon className="w-6 h-6 text-teal-600" />
     </div>
     <h3 className="text-lg font-semibold text-slate-900 mb-2">{title}</h3>
     <p className="text-slate-600 text-sm">{description}</p>
@@ -30,7 +29,7 @@ const ProcessStep = ({ number, title, description }) => (
     viewport={{ once: true }}
     className="flex gap-4"
   >
-    <div className="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+    <div className="flex-shrink-0 w-10 h-10 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold">
       {number}
     </div>
     <div>
@@ -40,84 +39,83 @@ const ProcessStep = ({ number, title, description }) => (
   </motion.div>
 );
 
-export default function Organizations() {
+export default function Businesses() {
   const benefits = [
     {
-      icon: Building2,
-      title: "White-Label Branding",
-      description: "Custom system name, logo, and messaging. Your donors see your brand, not ours."
+      icon: Store,
+      title: "Custom Branding",
+      description: "Your business name, logo, and messaging. Professional SMS payment experience for your customers."
     },
     {
       icon: Phone,
-      title: "Dedicated Phone Numbers",
-      description: "Get organization-specific SMS numbers for a professional, branded experience."
+      title: "Dedicated Business Number",
+      description: "Get a business-specific SMS number that customers can text to make payments."
     },
     {
-      icon: Users,
-      title: "Multi-Representative Access",
-      description: "Add multiple admins with different permission levels to manage your account."
+      icon: Receipt,
+      title: "Instant Invoicing",
+      description: "Send payment requests via SMS with detailed line items and due dates."
     },
     {
       icon: Send,
-      title: "Payment Requests",
-      description: "Send payment requests directly to donors for tuition, membership dues, and more."
+      title: "Payment Reminders",
+      description: "Automated SMS reminders for outstanding invoices. Get paid faster."
     },
     {
       icon: FileSpreadsheet,
-      title: "Detailed Reports",
-      description: "Export to Excel by date, month, or year. Get the data you need for accounting."
+      title: "Business Reports",
+      description: "Export transaction data to Excel. Integrate seamlessly with your accounting."
     },
     {
-      icon: Target,
-      title: "Campaign Management",
-      description: "Create unlimited campaigns for different fundraising initiatives and track each one."
+      icon: TrendingUp,
+      title: "Sales Analytics",
+      description: "Track revenue, customer payment patterns, and business growth metrics."
     },
     {
       icon: CreditCard,
-      title: "Multiple Payment Methods",
-      description: "Accept credit cards, cash, check, Zelle, OJC, Matbia, QuickPay, and more."
+      title: "Multiple Payment Options",
+      description: "Accept credit cards, Zelle, QuickPay, and other payment methods."
     },
     {
-      icon: Palette,
-      title: "Custom Email Templates",
-      description: "Professional email communications via SendGrid with your branding."
+      icon: Users,
+      title: "Multi-User Access",
+      description: "Add employees with different permission levels to manage payments."
     }
   ];
 
   const setupSteps = [
-    { title: "Create Account", description: "Sign up and provide your organization details" },
-    { title: "Get Phone Number", description: "Receive your dedicated SMS number" },
-    { title: "Add Campaigns", description: "Set up your fundraising campaigns" },
-    { title: "Invite Representatives", description: "Add team members to manage donations" },
-    { title: "Start Collecting", description: "Share your number and start receiving donations" }
+    { title: "Create Business Account", description: "Sign up and provide your business details" },
+    { title: "Get Your Number", description: "Receive your dedicated business SMS number" },
+    { title: "Configure Settings", description: "Set up payment methods and branding" },
+    { title: "Add Team Members", description: "Invite staff to help manage payments" },
+    { title: "Start Accepting Payments", description: "Share your number and collect payments via SMS" }
   ];
 
   return (
     <div className="min-h-screen bg-white pt-24">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-b from-amber-50/50 to-white">
+      <section className="py-20 bg-gradient-to-b from-teal-50/50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              <span className="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                For Organizations
+              <span className="inline-block bg-teal-100 text-teal-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                For Businesses
               </span>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                Power Your Organization's Fundraising
+                Accept Payments by Text Message
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Join leading mosdos using YidPay for seamless donation collection. 
-                Get set up in minutes and start accepting donations via text.
+                Simplify customer payments with SMS. Perfect for Jewish businesses, service providers, and merchants. Get paid faster with text-to-pay.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-blue-600/25 transition-all hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-teal-600/25 transition-all hover:-translate-y-0.5"
                 >
-                  Schedule a Demo
+                  Get Started
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
@@ -135,28 +133,28 @@ export default function Organizations() {
               transition={{ delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl p-8 text-white">
+              <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-3xl p-8 text-white">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
-                    <Building2 className="w-8 h-8" />
+                    <Store className="w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">Beth Israel Congregation</h3>
-                    <p className="text-blue-200">Powered by YidPay</p>
+                    <h3 className="text-xl font-bold">Goldstein's Judaica</h3>
+                    <p className="text-teal-200">Powered by YidPay</p>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center bg-white/10 rounded-xl p-4">
-                    <span>Total Donations (This Month)</span>
-                    <span className="text-2xl font-bold">$24,850</span>
+                    <span>Revenue (This Month)</span>
+                    <span className="text-2xl font-bold">$18,450</span>
                   </div>
                   <div className="flex justify-between items-center bg-white/10 rounded-xl p-4">
-                    <span>Active Campaigns</span>
-                    <span className="text-2xl font-bold">5</span>
+                    <span>Transactions</span>
+                    <span className="text-2xl font-bold">127</span>
                   </div>
                   <div className="flex justify-between items-center bg-white/10 rounded-xl p-4">
-                    <span>Total Donors</span>
-                    <span className="text-2xl font-bold">342</span>
+                    <span>Avg. Payment Time</span>
+                    <span className="text-2xl font-bold">2 Days</span>
                   </div>
                 </div>
               </div>
@@ -170,7 +168,7 @@ export default function Organizations() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-slate-500 mb-8">Perfect for</p>
           <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
-            {['Shuls', 'Yeshivas & Schools', 'Chesed Organizations', 'Community Kollels', 'Fundraising Campaigns'].map((type) => (
+            {['Retail Stores', 'Service Providers', 'Tutors & Teachers', 'Event Planners', 'Consultants'].map((type) => (
               <div key={type} className="text-slate-400 font-semibold text-lg">
                 {type}
               </div>
@@ -189,10 +187,10 @@ export default function Organizations() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Everything Your Organization Needs
+              Everything Your Business Needs
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Powerful features designed specifically for Jewish organizations
+              Powerful payment features designed for Jewish businesses
             </p>
           </motion.div>
 
@@ -214,10 +212,10 @@ export default function Organizations() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                Easy Setup Process
+                Quick Setup, Fast Payments
               </h2>
               <p className="text-slate-600 mb-8">
-                Get your organization up and running in less than 24 hours. Our team will guide you through every step.
+                Start accepting SMS payments today. Simple setup, no complex integrations, no special hardware required.
               </p>
               
               <div className="space-y-6">
@@ -233,17 +231,17 @@ export default function Organizations() {
               viewport={{ once: true }}
               className="bg-white rounded-2xl p-8 shadow-xl"
             >
-              <h3 className="text-xl font-bold text-slate-900 mb-6">What You Get</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-6">Business Features</h3>
               <div className="space-y-4">
                 {[
-                  "Dedicated SMS phone number",
-                  "Custom branded experience",
-                  "Unlimited campaigns",
-                  "Real-time donation alerts",
-                  "Comprehensive reporting",
-                  "Email receipt integration",
+                  "Dedicated business SMS number",
+                  "Custom branded messaging",
+                  "Unlimited transactions",
+                  "Real-time payment notifications",
+                  "Detailed transaction reports",
+                  "Professional email receipts",
                   "Multiple payment methods",
-                  "Priority support"
+                  "Priority business support"
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
@@ -254,16 +252,16 @@ export default function Organizations() {
               
               <div className="mt-8 pt-6 border-t border-slate-100">
                 <div className="flex items-center gap-4 mb-4">
-                  <Star className="w-5 h-5 text-amber-500" />
-                  <span className="text-slate-600">Avg. 40% increase in donations</span>
+                  <DollarSign className="w-5 h-5 text-teal-500" />
+                  <span className="text-slate-600">Get paid 50% faster</span>
                 </div>
                 <div className="flex items-center gap-4 mb-4">
                   <Zap className="w-5 h-5 text-blue-500" />
-                  <span className="text-slate-600">Setup in under 24 hours</span>
+                  <span className="text-slate-600">Setup in minutes</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Clock className="w-5 h-5 text-teal-500" />
-                  <span className="text-slate-600">24/6 SMS support</span>
+                  <span className="text-slate-600">24/6 business support</span>
                 </div>
               </div>
             </motion.div>
@@ -272,20 +270,20 @@ export default function Organizations() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800">
+      <section className="py-20 bg-gradient-to-r from-teal-900 to-teal-800">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Transform Your Fundraising?
+            Ready to Simplify Your Payment Process?
           </h2>
-          <p className="text-blue-100 mb-8 text-lg">
-            Schedule a demo and see how YidPay can work for your organization
+          <p className="text-teal-100 mb-8 text-lg">
+            Join businesses using YidPay to get paid faster via SMS
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-blue-900 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-teal-900 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl transition-all hover:-translate-y-0.5"
             >
-              Schedule a Demo
+              Get Started Today
             </Link>
             <Link
               to="/pricing"

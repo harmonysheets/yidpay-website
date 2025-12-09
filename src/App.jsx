@@ -5,6 +5,7 @@ import Home from '../Pages/Home'
 import Features from '../Pages/Features'
 import HowItWorks from '../Pages/HowItWorks'
 import Organizations from '../Pages/Organizations'
+import Businesses from '../Pages/Businesses'
 import Pricing from '../Pages/Pricing'
 import About from '../Pages/About'
 import Contact from '../Pages/Contact'
@@ -32,6 +33,7 @@ function App() {
           <Route path="/features" element={<Features />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/organizations" element={<Organizations />} />
+          <Route path="/businesses" element={<Businesses />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

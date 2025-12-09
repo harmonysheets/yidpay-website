@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Zap, Receipt } from 'lucide-react';
+import { Shield, Zap, Smartphone } from 'lucide-react';
 import SMSMockup from '../ui/SMSMockup';
 
 export default function HeroSection() {
@@ -97,8 +97,8 @@ export default function HeroSection() {
                 <span>Instant Receipt</span>
               </div>
               <div className="flex items-center gap-2">
-                <Receipt className="w-4 h-4 text-blue-500" />
-                <span>Tax Deductible</span>
+                <Smartphone className="w-4 h-4 text-blue-500" />
+                <span>No Apps Required</span>
               </div>
             </motion.div>
           </div>
