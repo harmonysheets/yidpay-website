@@ -56,7 +56,7 @@ export default function HowItWorks() {
         { type: 'sent', text: 'JOIN' },
         { type: 'received', text: 'Welcome to YidPay! What is your first name?' },
         { type: 'sent', text: 'David' },
-        { type: 'received', text: 'What is your legal last name?' },
+        { type: 'received', text: 'What is your last name?' },
         { type: 'sent', text: 'Cohen' },
         { type: 'received', text: 'Display first name (or SKIP):' },
         { type: 'sent', text: 'David' },
@@ -71,7 +71,7 @@ export default function HowItWorks() {
       description: "See all available campaigns from partner organizations",
       messages: [
         { type: 'sent', text: 'LIST' },
-        { type: 'received', text: 'Available Campaigns:\n\nCN01 - Beth Israel Building Fund\nCN02 - Yeshiva Tuition Assistance\nCN03 - Bikur Cholim\nCN04 - Hachnosas Kallah Fund\n\nTo donate: [ID] [AMOUNT] [CARD]' },
+        { type: 'received', text: 'Available Campaigns:\n\nCN01 - Hachnuses Kalla\nCN02 - Yeshiva Tuition\nCN03 - Bikur Cholim\nCN04 - Hachnosas Kallah Fund\n\nTo donate: [ID] [AMOUNT] [CARD]' },
       ]
     },
     {
@@ -80,7 +80,7 @@ export default function HowItWorks() {
       description: "Donate using a new card or saved card",
       messages: [
         { type: 'sent', text: 'CN01 180 4444333322226547 0827' },
-        { type: 'received', text: '✅ Thank you, David!\n\n$180.00 donated to Beth Israel Building Fund\n\nReceipt sent to david@email.com\n\nReply SAVE to save this card for future use.' },
+        { type: 'received', text: '✅ Thank you, David!\n\n$180.00 donated to Hachnuses Kalla\n\nReceipt sent to david@email.com\n\nReply SAVE to save this card for future use.' },
       ]
     }
   ];

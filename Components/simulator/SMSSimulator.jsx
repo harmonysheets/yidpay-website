@@ -15,19 +15,19 @@ export default function SMSSimulator() {
     // Command responses
     const responses = {
       'JOIN': 'Welcome to YidPay! What is your first name?',
-      'LIST': 'Available Campaigns:\nCN01 - Beth Israel Building Fund\nCN02 - Yeshiva Tuition Assistance\nCN03 - Bikur Cholim\nCN04 - Community Food Pantry\n\nReply with campaign ID + amount to donate.',
+      'LIST': 'Available Campaigns:\nCN01 - Hachnuses Kalla\nCN02 - Yeshiva Tuition\nCN03 - Bikur Cholim\nCN04 - Community Food Pantry\n\nReply with campaign ID + amount to donate.',
       'HELP': 'YidPay Commands:\n• JOIN - Register\n• LIST - View campaigns\n• DONATE [ID] [AMT] - Make donation\n• MA or MAASER - Check maaser\n• PLEDGES - View pledges\n• PROFILE - Your profile\n• RAT - Recent donations\n• HELP - This message',
       'MA': 'Your Maaser Balance:\n\nObligated: $1,250.00\nDonated: $875.00\nRemaining: $375.00\n\nText MA INCOME [amount] to add income.',
       'MAASER': 'Your Maaser Balance:\n\nObligated: $1,250.00\nDonated: $875.00\nRemaining: $375.00\n\nText MA INCOME [amount] to add income.',
-      'PLEDGES': 'Your Active Pledges:\n\n1. Beth Israel Building - $500\n   Due: 12/31/2025\n\n2. Yeshiva Tuition - $1,000\n   Due: 01/15/2026\n\nText PLEDGE [ID] [AMT] [DATE] to create new pledge.',
+      'PLEDGES': 'Your Active Pledges:\n\n1. New Shul Building - $500\n   Due: 12/31/2025\n\n2. Yeshiva Tuition - $1,000\n   Due: 01/15/2026\n\nText PLEDGE [ID] [AMT] [DATE] to create new pledge.',
       'PROFILE': 'Your Profile:\n\nName: David Cohen\nEmail: david@email.com\nPhone: (555) 123-4567\nSaved Cards: 2\nTotal Donated: $875.00\n\nText PROFILE UPDATE to edit.',
-      'RAT': 'Recent Donations:\n\n12/05/25 - Beth Israel - $180.00\n12/01/25 - Yeshiva Fund - $250.00\n11/28/25 - Bikur Cholim - $100.00\n\nTotal this month: $530.00',
+      'RAT': 'Recent Donations:\n\n12/05/25 - Hachnuses Kalla - $180.00\n12/01/25 - Yeshiva Fund - $250.00\n11/28/25 - Bikur Cholim - $100.00\n\nTotal this month: $530.00',
       'RANDOM': '🎲 Random Campaign Selected!\n\n$50.00 donated to Bikur Cholim\n\nReceipt sent to david@email.com\n\nThank you for your generosity!',
     };
 
     // Check for donation patterns
     if (command.match(/^CN\d+\s+\d+/)) {
-      return '✅ Thank you, David!\n\n$180.00 donated to Beth Israel Building Fund\n\nReceipt sent to david@email.com\n\nYour maaser: $375 remaining';
+      return '✅ Thank you, David!\n\n$180.00 donated to Hachnuses Kalla\n\nReceipt sent to david@email.com\n\nYour maaser: $375 remaining';
     }
     
     if (command.startsWith('MA INCOME')) {
@@ -39,7 +39,7 @@ export default function SMSSimulator() {
     }
     
     if (command.startsWith('RANDOM')) {
-      const campaigns = ['Beth Israel', 'Yeshiva Fund', 'Bikur Cholim', 'Food Pantry'];
+      const campaigns = ['Hachnuses Kalla', 'Yeshiva Fund', 'Bikur Cholim', 'Kollel Support'];
       const random = campaigns[Math.floor(Math.random() * campaigns.length)];
       return `🎲 Random Campaign: ${random}\n\n$50.00 donated successfully!\n\nReceipt sent to your email.`;
     }

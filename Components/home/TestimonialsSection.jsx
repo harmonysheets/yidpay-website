@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
     {
       quote: "YidPay has transformed how our shul collects payments and donations. Members love the simplicity—they just text to pay membership dues or give tzedakah. Our collections have increased by 40% since we started using it.",
       author: "Rabbi David Goldstein",
-      role: "Beth Israel Congregation",
+      role: "Shul Gabbai",
       rating: 5
     },
     {

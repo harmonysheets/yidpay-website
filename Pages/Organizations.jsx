@@ -141,7 +141,7 @@ export default function Organizations() {
                     <Building2 className="w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">Beth Israel Congregation</h3>
+                    <h3 className="text-xl font-bold">Beis Hatavshil Ohel Yosef</h3>
                     <p className="text-blue-200">Powered by YidPay</p>
                   </div>
                 </div>

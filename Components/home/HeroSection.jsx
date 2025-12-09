@@ -8,7 +8,7 @@ export default function HeroSection() {
     { type: 'sent', text: 'JOIN' },
     { type: 'received', text: 'Welcome to YidPay! What is your first name?' },
     { type: 'sent', text: 'David' },
-    { type: 'received', text: 'What is your legal last name?' },
+    { type: 'received', text: 'What is your last name?' },
     { type: 'sent', text: 'Cohen' },
     { type: 'received', text: '✅ Registration complete! Text LIST or HELP.' },
   ];

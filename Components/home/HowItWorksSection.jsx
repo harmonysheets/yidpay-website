@@ -12,7 +12,7 @@ export default function HowItWorksSection() {
       description: "Register in seconds via text message. No apps to download, no passwords to remember.",
       messages: [
         { type: 'sent', text: 'JOIN' },
-        { type: 'received', text: 'Welcome! Reply with your full name to get started.' },
+        { type: 'received', text: 'Welcome! Reply with your first name to get started.' },
       ]
     },
     {
@@ -22,7 +22,7 @@ export default function HowItWorksSection() {
       description: "Text LIST to see all available campaigns from your favorite organizations.",
       messages: [
         { type: 'sent', text: 'LIST' },
-        { type: 'received', text: 'Available Campaigns:\nCN01 - Beth Israel Building Fund\nCN02 - Yeshiva Tuition Assistance\nCN03 - Bikur Cholim' },
+        { type: 'received', text: 'Available Campaigns:\nCN01 - Hachnuses Kalla\nCN02 - Yeshiva Tuition\nCN03 - Bikur Cholim' },
       ]
     },
     {
@@ -32,7 +32,7 @@ export default function HowItWorksSection() {
       description: "Send campaign ID + amount. Use a saved card or enter new card details securely.",
       messages: [
         { type: 'sent', text: 'CN01 180 6547' },
-        { type: 'received', text: '✅ Thank you! $180 payment to Beth Israel Building Fund. Receipt sent to your email.' },
+        { type: 'received', text: '✅ Thank you! $180 payment to Hachnuses Kalla. Receipt sent to your email.' },
       ]
     }
   ];
