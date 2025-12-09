@@ -68,8 +68,8 @@ export default function About() {
                 Built by the Community,<br />for the Community
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                YidPay was created with a simple mission: make payments and donations accessible to everyone. 
-                We believe accepting payments should be as easy as sending a text message.
+                YidPay was created with a simple mission: provide a kosher way for every Yid to make payments and donations—no smartphone required. 
+                Everyone deserves access to tzedakah and payments, whether they use a flip phone or the latest smartphone.
               </p>
             </motion.div>
             
@@ -79,11 +79,37 @@ export default function About() {
               transition={{ delay: 0.2 }}
               className="relative"
             >
-              <div className="aspect-square bg-gradient-to-br from-blue-100 to-teal-100 rounded-3xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Logo className="w-24 h-24" />
-                  <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-2">YidPay</h3>
-                  <p className="text-slate-600">Payments Made Simple</p>
+              <div className="bg-gradient-to-br from-blue-100 to-teal-100 rounded-3xl p-8">
+                <div className="bg-white rounded-2xl p-8 shadow-lg">
+                  <div className="text-center mb-6">
+                    <div className="mb-4">
+                      <Logo showText={true} />
+                    </div>
+                    <p className="text-slate-600 font-medium">Kosher Payment Solution</p>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-4 mt-6">
+                    <div className="bg-green-50 rounded-xl p-4 text-center">
+                      <div className="text-3xl mb-2">📱</div>
+                      <p className="text-sm font-semibold text-green-900">Flip Phone</p>
+                      <p className="text-xs text-green-700">Friendly</p>
+                    </div>
+                    <div className="bg-blue-50 rounded-xl p-4 text-center">
+                      <div className="text-3xl mb-2">📵</div>
+                      <p className="text-sm font-semibold text-blue-900">No Apps</p>
+                      <p className="text-xs text-blue-700">Required</p>
+                    </div>
+                    <div className="bg-purple-50 rounded-xl p-4 text-center">
+                      <div className="text-3xl mb-2">🔒</div>
+                      <p className="text-sm font-semibold text-purple-900">100%</p>
+                      <p className="text-xs text-purple-700">Secure</p>
+                    </div>
+                    <div className="bg-amber-50 rounded-xl p-4 text-center">
+                      <div className="text-3xl mb-2">✅</div>
+                      <p className="text-sm font-semibold text-amber-900">Kosher</p>
+                      <p className="text-xs text-amber-700">Approved</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -104,10 +130,10 @@ export default function About() {
               Our Mission
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Jewish organizations and businesses needed a simpler way to accept payments. Apps, logins, 
-              and complex forms created barriers. We founded YidPay to bring simplicity to payments and donations. 
-              With just a text message, anyone can pay tuition, make donations, track maaser, and support organizations. 
-              Optional web dashboard available for advanced management.
+              Many in our community choose not to use smartphones, yet modern payment systems increasingly require them. 
+              We founded YidPay to provide a kosher, accessible payment solution for every Yid—whether using a basic flip phone or a smartphone. 
+              No apps, no internet browsing, no compromises. Just simple SMS payments that work for everyone in our community, 
+              enabling tzedakah, tuition payments, and business transactions through the simplest technology: text messaging.
             </p>
           </motion.div>
         </div>
@@ -125,24 +151,24 @@ export default function About() {
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-slate-600">
                 <p>
-                  YidPay was born from a simple observation: while technology has made many aspects 
-                  of life easier, giving tzedakah often still requires navigating complex websites, 
-                  downloading apps, or carrying cash.
+                  YidPay was born from a real need in our community: many Yidden choose not to use smartphones 
+                  for halachic or personal reasons, yet modern payment systems increasingly require them. 
+                  This created a barrier to giving tzedakah and making everyday payments.
                 </p>
                 <p>
-                  We saw an opportunity to leverage the most universal communication tool—SMS—to 
-                  create a donation platform that anyone can use. Whether you're a tech-savvy 
-                  millennial or a bubby with a flip phone, YidPay works for you.
+                  We saw an opportunity to leverage the most basic, universal communication tool—SMS—to 
+                  create a payment platform that truly works for everyone. Whether you use a kosher flip phone 
+                  or the latest smartphone, YidPay provides the same dignified payment experience without compromise.
                 </p>
                 <p>
-                  Beyond donations, we've built features that matter to our community: automatic 
-                  maaser tracking, pledge management, zmanim, and more. Every feature was designed 
-                  with the unique needs of Jewish donors and organizations in mind.
+                  Beyond basic payments, we've built features that matter to our community: automatic 
+                  maaser tracking, pledge management, and full support for both donations and business payments. 
+                  Every feature was designed with respect for those who choose simplicity and kashrus in their technology.
                 </p>
                 <p>
-                  Today, YidPay serves organizations across the globe, from small local 
-                  shuls to large international charities. We're proud to be part of the chain 
-                  of tzedakah that connects our community.
+                  Today, YidPay serves organizations and businesses across the globe, from small local 
+                  shuls to large yeshivas and Jewish-owned businesses. We're proud to enable every Yid to participate 
+                  in tzedakah and commerce, regardless of their device choice.
                 </p>
               </div>
             </motion.div>
@@ -241,8 +267,8 @@ export default function About() {
             Join Our Mission
           </h2>
           <p className="text-blue-100 mb-8 text-lg">
-            Whether you're a donor looking for an easier way to give, or an organization 
-            seeking modern fundraising tools, we're here to help.
+            Whether you're looking for an accessible way to make payments, an organization 
+            seeking modern payment tools, or a business wanting to accept SMS payments—we're here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
