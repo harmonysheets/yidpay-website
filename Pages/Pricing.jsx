@@ -33,10 +33,16 @@ const PricingCard = ({ plan, isPopular, isAnnual }) => {
       
       <div className="text-center mb-8">
         <div className="flex items-baseline justify-center gap-1">
-          <span className="text-4xl font-bold text-slate-900">${price}</span>
-          <span className="text-slate-500">/month</span>
+          {typeof price === 'number' && price > 0 ? (
+            <>
+              <span className="text-4xl font-bold text-slate-900">${price}</span>
+              <span className="text-slate-500">/month</span>
+            </>
+          ) : (
+            <span className="text-2xl font-semibold text-slate-900">Contact</span>
+          )}
         </div>
-        {isAnnual && plan.monthlyPrice > 0 && (
+        {isAnnual && typeof plan.monthlyPrice === 'number' && plan.monthlyPrice > 0 && (
           <p className="text-green-600 text-sm mt-1">Save ${(plan.monthlyPrice - plan.annualPrice) * 12}/year</p>
         )}
       </div>
@@ -99,6 +105,7 @@ const FAQItem = ({ question, answer }) => {
 
 export default function Pricing() {
   const [isAnnual, setIsAnnual] = useState(true);
+  const [selectedTab, setSelectedTab] = useState('organizations'); // 'organizations' or 'businesses'
 
   const donorPlan = {
     title: "For Payers",
@@ -116,7 +123,9 @@ export default function Pricing() {
   const orgPlans = [
     {
       name: "Starter",
-      description: "Perfect for small shuls and organizations",
+      description: selectedTab === 'organizations' 
+        ? "Perfect for small organizations" 
+        : "Perfect for small businesses",
       monthlyPrice: 49,
       annualPrice: 39,
       cta: "Get Started",
@@ -134,7 +143,9 @@ export default function Pricing() {
     },
     {
       name: "Professional",
-      description: "For growing organizations",
+      description: selectedTab === 'organizations' 
+        ? "For growing organizations" 
+        : "For growing businesses",
       monthlyPrice: 149,
       annualPrice: 119,
       cta: "Get Started",
@@ -152,9 +163,11 @@ export default function Pricing() {
     },
     {
       name: "Enterprise",
-      description: "For large organizations with custom needs",
-      monthlyPrice: 0,
-      annualPrice: 0,
+      description: selectedTab === 'organizations'
+        ? "For large organizations with custom needs"
+        : "For established businesses with custom needs",
+      monthlyPrice: null,
+      annualPrice: null,
       cta: "Contact Sales",
       features: [
         { text: "Unlimited phone numbers", included: true },
@@ -197,7 +210,7 @@ export default function Pricing() {
     },
     {
       question: "What are dedicated campaign phone numbers?",
-      answer: "For $20/month per campaign, you can get a dedicated phone number for a specific campaign. Users can text that number directly without entering a campaign ID, making donations even simpler."
+      answer: "For $20/month per campaign, you can get a dedicated phone number for a specific campaign. Users can text that number directly without entering a campaign ID, making payments even simpler."
     },
     {
       question: "What support is included?",
@@ -221,7 +234,7 @@ export default function Pricing() {
               Simple, Transparent Pricing
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Free for donors. Affordable plans for organizations. No hidden fees.
+              Free for payers. Affordable plans for organizations and businesses. No hidden fees.
             </p>
           </motion.div>
         </div>
@@ -260,14 +273,44 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* Organization Pricing */}
+      {/* Organization & Business Pricing */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Building2 className="w-8 h-8 text-blue-600" />
-              <h2 className="text-2xl font-bold text-slate-900">For Organizations</h2>
+            {/* Tab Selection */}
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <button
+                onClick={() => setSelectedTab('organizations')}
+                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
+                  selectedTab === 'organizations'
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                }`}
+              >
+                <Building2 className="w-5 h-5" />
+                Organizations
+              </button>
+              <button
+                onClick={() => setSelectedTab('businesses')}
+                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
+                  selectedTab === 'businesses'
+                    ? 'bg-teal-600 text-white shadow-lg'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                }`}
+              >
+                <Zap className="w-5 h-5" />
+                Businesses
+              </button>
             </div>
+            
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">
+              {selectedTab === 'organizations' ? 'Organization Plans' : 'Business Plans'}
+            </h2>
+            <p className="text-slate-600 mb-8">
+              {selectedTab === 'organizations' 
+                ? 'Choose the perfect plan for your organization'
+                : 'Flexible pricing for businesses of all sizes'}
+            </p>
             
             {/* Billing Toggle */}
             <div className="inline-flex items-center gap-4 bg-slate-100 p-1 rounded-xl">
