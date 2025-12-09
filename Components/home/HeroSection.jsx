@@ -5,12 +5,10 @@ import SMSMockup from '../ui/SMSMockup';
 
 export default function HeroSection() {
   const heroMessages = [
-    { type: 'sent', text: 'JOIN' },
-    { type: 'received', text: 'Welcome to YidPay! What is your first name?' },
-    { type: 'sent', text: 'David' },
-    { type: 'received', text: 'What is your last name?' },
-    { type: 'sent', text: 'Cohen' },
-    { type: 'received', text: '✅ Registration complete! Text LIST or HELP.' },
+    { type: 'sent', text: 'LIST' },
+    { type: 'received', text: 'Available:\n\nCN01 - Hachnuses Kalla\nCN02 - Yeshiva Tuition\nBZ01 - Goldstein Judaica\nBZ02 - Catering Services' },
+    { type: 'sent', text: 'BZ01 250 6547' },
+    { type: 'received', text: '✅ $250 payment to Goldstein Judaica processed! Receipt sent to your email.' },
   ];
 
   return (

@@ -13,6 +13,12 @@ export default function TestimonialsSection() {
       rating: 5
     },
     {
+      quote: "Our customers can now pay invoices with a simple text. We've cut our payment collection time in half and significantly reduced late payments. It's perfect for our business.",
+      author: "Leah Rosenbaum",
+      role: "Catering Business Owner",
+      rating: 5
+    },
+    {
       quote: "As someone who gives tzedakah regularly, tracking my maaser was always a challenge. YidPay's automatic tracking means I always know exactly where I stand with my obligations.",
       author: "Moshe Schwartz",
       role: "YidPay User",
@@ -28,6 +34,12 @@ export default function TestimonialsSection() {
       quote: "The pledge management feature is incredible. Parents can commit to future tuition payments, and we can track everything automatically. It's simplified our entire payment operation.",
       author: "Yosef Klein",
       role: "Yeshiva Administrator",
+      rating: 5
+    },
+    {
+      quote: "My tutoring business runs so much smoother now. Parents text to pay for sessions instantly, and I get real-time notifications. No more chasing payments or dealing with checks.",
+      author: "Avi Friedman",
+      role: "Private Tutor",
       rating: 5
     }
   ];
